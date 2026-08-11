@@ -78,10 +78,10 @@ export default function CareersPage() {
         }}
       >
         <div
+          className="pad-page-hero"
           style={{
             maxWidth: 1160,
             margin: "0 auto",
-            padding: "80px 24px 64px",
             display: "flex",
             flexDirection: "column",
             gap: 20,
@@ -98,17 +98,7 @@ export default function CareersPage() {
           >
             Home / Careers
           </div>
-          <h1
-            style={{
-              margin: 0,
-              fontSize: 56,
-              lineHeight: 1.06,
-              fontWeight: 900,
-              letterSpacing: "-0.02em",
-              maxWidth: 760,
-              textWrap: "pretty",
-            }}
-          >
+          <h1 className="h1-page" style={{ maxWidth: 760 }}>
             No experience. No ceiling. No kidding.
           </h1>
           <p
@@ -128,10 +118,10 @@ export default function CareersPage() {
       </div>
 
       <div
+        className="pad-section-sm"
         style={{
           maxWidth: 1160,
           margin: "0 auto",
-          padding: "88px 24px",
           display: "flex",
           flexDirection: "column",
           gap: 44,
@@ -156,25 +146,11 @@ export default function CareersPage() {
           >
             Your path
           </div>
-          <h2
-            style={{
-              margin: 0,
-              fontSize: 40,
-              fontWeight: 800,
-              letterSpacing: "-0.01em",
-              lineHeight: 1.1,
-            }}
-          >
+          <h2 className="h2-section">
             Four steps, one direction — up.
           </h2>
         </div>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(4,1fr)",
-            gap: 20,
-          }}
-        >
+        <div className="grid-4">
           {[
             {
               n: "01",
@@ -239,10 +215,10 @@ export default function CareersPage() {
         }}
       >
         <div
+          className="pad-section"
           style={{
             maxWidth: 1160,
             margin: "0 auto",
-            padding: "96px 24px",
             display: "flex",
             flexDirection: "column",
             gap: 44,
@@ -267,15 +243,7 @@ export default function CareersPage() {
             >
               Compensation & benefits
             </div>
-            <h2
-              style={{
-                margin: 0,
-                fontSize: 40,
-                fontWeight: 800,
-                letterSpacing: "-0.01em",
-                lineHeight: 1.1,
-              }}
-            >
+            <h2 className="h2-section">
               The further you go, the more you earn.
             </h2>
             <p
@@ -291,21 +259,20 @@ export default function CareersPage() {
             </p>
           </div>
           <div
+            className="benefits-scroll"
             style={{
               background: "#FFFFFF",
               border: "1px solid rgba(39,96,216,0.15)",
               borderRadius: 14,
-              overflow: "hidden",
               boxShadow: "0 2px 12px rgba(23,64,160,0.06)",
             }}
           >
+            <div>
             {benefitRows.map((row) => (
               <div
                 key={row.name}
+                className="grid-benefits"
                 style={{
-                  display: "grid",
-                  gridTemplateColumns: "2fr 1fr 1fr 1fr 1fr",
-                  alignItems: "center",
                   borderBottom: "1px solid rgba(39,96,216,0.1)",
                   background: row.bg,
                 }}
@@ -366,15 +333,16 @@ export default function CareersPage() {
                 </div>
               </div>
             ))}
+            </div>
           </div>
         </div>
       </div>
 
       <div
+        className="pad-section"
         style={{
           maxWidth: 1160,
           margin: "0 auto",
-          padding: "96px 24px",
           display: "flex",
           flexDirection: "column",
           gap: 44,
@@ -399,15 +367,7 @@ export default function CareersPage() {
           >
             More than sales
           </div>
-          <h2
-            style={{
-              margin: 0,
-              fontSize: 40,
-              fontWeight: 800,
-              letterSpacing: "-0.01em",
-              lineHeight: 1.1,
-            }}
-          >
+          <h2 className="h2-section">
             You&apos;ll learn how a business actually runs.
           </h2>
           <p
@@ -422,13 +382,7 @@ export default function CareersPage() {
             not just selling, but building.
           </p>
         </div>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3,1fr)",
-            gap: 20,
-          }}
-        >
+        <div className="grid-3">
           {[
             {
               title: "Hiring & staffing",
@@ -488,15 +442,8 @@ export default function CareersPage() {
         }}
       >
         <div
-          style={{
-            maxWidth: 1160,
-            margin: "0 auto",
-            padding: "96px 24px",
-            display: "grid",
-            gridTemplateColumns: "1.1fr 0.9fr",
-            gap: 56,
-            alignItems: "center",
-          }}
+          className="grid-split pad-section"
+          style={{ maxWidth: 1160, margin: "0 auto" }}
         >
           <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
             <div
@@ -510,15 +457,7 @@ export default function CareersPage() {
             >
               Culture
             </div>
-            <h2
-              style={{
-                margin: 0,
-                fontSize: 40,
-                fontWeight: 800,
-                letterSpacing: "-0.01em",
-                lineHeight: 1.1,
-              }}
-            >
+            <h2 className="h2-section">
               We work hard. We also actually have fun.
             </h2>
             <p
@@ -556,15 +495,7 @@ export default function CareersPage() {
               ))}
             </div>
           </div>
-          <div
-            style={{
-              position: "relative",
-              height: 380,
-              minWidth: 0,
-              overflow: "hidden",
-              borderRadius: 16,
-            }}
-          >
+          <div className="media-sm">
             <ImageSlot
               id="careers-culture"
               shape="rounded"
@@ -577,16 +508,8 @@ export default function CareersPage() {
       </div>
 
       <div
-        style={{
-          maxWidth: 1160,
-          margin: "0 auto",
-          padding: "88px 24px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          gap: 32,
-          flexWrap: "wrap",
-        }}
+        className="cta-row pad-section-sm"
+        style={{ maxWidth: 1160, margin: "0 auto" }}
       >
         <div
           style={{
@@ -597,13 +520,8 @@ export default function CareersPage() {
           }}
         >
           <h2
-            style={{
-              margin: 0,
-              fontSize: 40,
-              fontWeight: 900,
-              letterSpacing: "-0.01em",
-              color: "#0B1F3D",
-            }}
+            className="h2-section"
+            style={{ fontWeight: 900, color: "#0B1F3D" }}
           >
             Ready to start — and not stay there?
           </h2>

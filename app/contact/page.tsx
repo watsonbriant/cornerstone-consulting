@@ -13,10 +13,10 @@ export default function ContactPage() {
         }}
       >
         <div
+          className="pad-page-hero"
           style={{
             maxWidth: 1160,
             margin: "0 auto",
-            padding: "80px 24px 56px",
             display: "flex",
             flexDirection: "column",
             gap: 20,
@@ -33,16 +33,7 @@ export default function ContactPage() {
           >
             Home / Contact
           </div>
-          <h1
-            style={{
-              margin: 0,
-              fontSize: 56,
-              lineHeight: 1.06,
-              fontWeight: 900,
-              letterSpacing: "-0.02em",
-              textWrap: "pretty",
-            }}
-          >
+          <h1 className="h1-page">
             Let&apos;s talk.
           </h1>
           <p
@@ -61,14 +52,11 @@ export default function ContactPage() {
       </div>
 
       <div
+        className="grid-split--contact"
         style={{
           maxWidth: 1160,
           margin: "0 auto",
           padding: "24px 24px 96px",
-          display: "grid",
-          gridTemplateColumns: "1.15fr 0.85fr",
-          gap: 48,
-          alignItems: "start",
         }}
       >
         <form
@@ -83,13 +71,7 @@ export default function ContactPage() {
             boxShadow: "0 2px 12px rgba(23,64,160,0.06)",
           }}
         >
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: 16,
-            }}
-          >
+          <div className="grid-2">
             <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
               <label
                 style={{ fontSize: 14, fontWeight: 700, color: "#1740A0" }}

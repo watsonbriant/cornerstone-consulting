@@ -1,32 +1,21 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 export type SitePage = "home" | "about" | "careers" | "contact";
 
 export function SiteHeader({ active }: { active: SitePage }) {
+  const [open, setOpen] = useState(false);
+
+  const close = () => setOpen(false);
+
   return (
-    <div
-      style={{
-        position: "sticky",
-        top: 0,
-        zIndex: 50,
-        background: "rgba(245,248,253,0.92)",
-        backdropFilter: "blur(10px)",
-        borderBottom: "1px solid rgba(39,96,216,0.12)",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: 1160,
-          margin: "0 auto",
-          padding: "14px 24px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          gap: 24,
-        }}
-      >
+    <header className="site-header">
+      <div className="site-header__inner">
         <Link
           href="/"
+          onClick={close}
           style={{
             display: "flex",
             flexDirection: "column",
@@ -55,41 +44,39 @@ export function SiteHeader({ active }: { active: SitePage }) {
             CONSULTING
           </span>
         </Link>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 28,
-            fontSize: 15,
-            fontWeight: 600,
-          }}
-        >
+
+        <nav className={`site-header__links${open ? " open" : ""}`}>
           <Link
             href="/"
+            onClick={close}
             className={active === "home" ? "nav-link-active" : "nav-link"}
           >
             Home
           </Link>
           <Link
             href="/about"
+            onClick={close}
             className={active === "about" ? "nav-link-active" : "nav-link"}
           >
             About
           </Link>
           <Link
             href="/careers"
+            onClick={close}
             className={active === "careers" ? "nav-link-active" : "nav-link"}
           >
             Careers
           </Link>
           <Link
             href="/contact"
+            onClick={close}
             className={active === "contact" ? "nav-link-active" : "nav-link"}
           >
             Contact
           </Link>
           <Link
             href="/contact"
+            onClick={close}
             className="btn-primary"
             style={{
               padding: "11px 20px",
@@ -99,8 +86,20 @@ export function SiteHeader({ active }: { active: SitePage }) {
           >
             Apply Now →
           </Link>
-        </div>
+        </nav>
+
+        <button
+          type="button"
+          className="site-header__burger"
+          aria-label="Menu"
+          aria-expanded={open}
+          onClick={() => setOpen((v) => !v)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </div>
-    </div>
+    </header>
   );
 }

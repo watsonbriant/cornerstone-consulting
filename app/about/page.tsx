@@ -14,10 +14,10 @@ export default function AboutPage() {
         }}
       >
         <div
+          className="pad-page-hero"
           style={{
             maxWidth: 1160,
             margin: "0 auto",
-            padding: "80px 24px 64px",
             display: "flex",
             flexDirection: "column",
             gap: 20,
@@ -34,17 +34,7 @@ export default function AboutPage() {
           >
             Home / About
           </div>
-          <h1
-            style={{
-              margin: 0,
-              fontSize: 56,
-              lineHeight: 1.06,
-              fontWeight: 900,
-              letterSpacing: "-0.02em",
-              maxWidth: 760,
-              textWrap: "pretty",
-            }}
-          >
+          <h1 className="h1-page" style={{ maxWidth: 760 }}>
             We build people, not just campaigns.
           </h1>
           <p
@@ -64,15 +54,8 @@ export default function AboutPage() {
       </div>
 
       <div
-        style={{
-          maxWidth: 1160,
-          margin: "0 auto",
-          padding: "88px 24px",
-          display: "grid",
-          gridTemplateColumns: "1.1fr 0.9fr",
-          gap: 56,
-          alignItems: "center",
-        }}
+        className="grid-split pad-section-sm"
+        style={{ maxWidth: 1160, margin: "0 auto" }}
       >
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
           <div
@@ -126,15 +109,7 @@ export default function AboutPage() {
             teach. No seniority. 100% promotion from within.
           </p>
         </div>
-        <div
-          style={{
-            position: "relative",
-            height: 420,
-            minWidth: 0,
-            overflow: "hidden",
-            borderRadius: 16,
-          }}
-        >
+        <div className="media-md">
           <ImageSlot
             id="about-meeting"
             shape="rounded"
@@ -153,10 +128,10 @@ export default function AboutPage() {
         }}
       >
         <div
+          className="pad-section"
           style={{
             maxWidth: 1160,
             margin: "0 auto",
-            padding: "96px 24px",
             display: "flex",
             flexDirection: "column",
             gap: 44,
@@ -181,25 +156,11 @@ export default function AboutPage() {
             >
               What we stand on
             </div>
-            <h2
-              style={{
-                margin: 0,
-                fontSize: 40,
-                fontWeight: 800,
-                letterSpacing: "-0.01em",
-                lineHeight: 1.1,
-              }}
-            >
+            <h2 className="h2-section">
               Five things we never compromise.
             </h2>
           </div>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(5,1fr)",
-              gap: 16,
-            }}
-          >
+          <div className="grid-5">
             {[
               {
                 title: "Integrity",
@@ -265,25 +226,10 @@ export default function AboutPage() {
         }}
       >
         <div
-          style={{
-            maxWidth: 1160,
-            margin: "0 auto",
-            padding: "96px 24px",
-            display: "grid",
-            gridTemplateColumns: "0.9fr 1.1fr",
-            gap: 56,
-            alignItems: "center",
-          }}
+          className="grid-split--rev pad-section"
+          style={{ maxWidth: 1160, margin: "0 auto" }}
         >
-          <div
-            style={{
-              position: "relative",
-              height: 380,
-              minWidth: 0,
-              overflow: "hidden",
-              borderRadius: 16,
-            }}
-          >
+          <div className="media-sm">
             <ImageSlot
               id="about-training"
               shape="rounded"
@@ -304,15 +250,7 @@ export default function AboutPage() {
             >
               How we train
             </div>
-            <h2
-              style={{
-                margin: 0,
-                fontSize: 40,
-                fontWeight: 800,
-                letterSpacing: "-0.01em",
-                lineHeight: 1.1,
-              }}
-            >
+            <h2 className="h2-section">
               AI, classroom & hands-on — from day one.
             </h2>
             <p
@@ -360,16 +298,8 @@ export default function AboutPage() {
       </div>
 
       <div
-        style={{
-          maxWidth: 1160,
-          margin: "0 auto",
-          padding: "88px 24px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          gap: 32,
-          flexWrap: "wrap",
-        }}
+        className="cta-row pad-section-sm"
+        style={{ maxWidth: 1160, margin: "0 auto" }}
       >
         <div
           style={{
@@ -380,13 +310,8 @@ export default function AboutPage() {
           }}
         >
           <h2
-            style={{
-              margin: 0,
-              fontSize: 40,
-              fontWeight: 900,
-              letterSpacing: "-0.01em",
-              color: "#0B1F3D",
-            }}
+            className="h2-section"
+            style={{ fontWeight: 900, color: "#0B1F3D" }}
           >
             Want to meet the team?
           </h2>

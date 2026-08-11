@@ -4,13 +4,11 @@ export function SiteFooter() {
   return (
     <div style={{ background: "#0B1F3D", color: "#C7D6EE" }}>
       <div
+        className="grid-footer site-footer-pad"
         style={{
           maxWidth: 1160,
           margin: "0 auto",
           padding: "64px 24px 40px",
-          display: "grid",
-          gridTemplateColumns: "1.4fr 1fr 1fr 1fr",
-          gap: 40,
         }}
       >
         <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
@@ -138,6 +136,7 @@ export function SiteFooter() {
       </div>
       <div style={{ borderTop: "1px solid rgba(147,177,222,0.15)" }}>
         <div
+          className="site-footer-pad"
           style={{
             maxWidth: 1160,
             margin: "0 auto",

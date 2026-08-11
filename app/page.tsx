@@ -14,15 +14,8 @@ export default function HomePage() {
         }}
       >
         <div
-          style={{
-            maxWidth: 1160,
-            margin: "0 auto",
-            padding: "88px 24px 72px",
-            display: "grid",
-            gridTemplateColumns: "1.1fr 0.9fr",
-            gap: 56,
-            alignItems: "center",
-          }}
+          className="grid-split pad-hero"
+          style={{ maxWidth: 1160, margin: "0 auto" }}
         >
           <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
             <div
@@ -36,16 +29,7 @@ export default function HomePage() {
             >
               B2B Client Acquisition · Tampa, FL
             </div>
-            <h1
-              style={{
-                margin: 0,
-                fontSize: 60,
-                lineHeight: 1.04,
-                fontWeight: 900,
-                letterSpacing: "-0.02em",
-                textWrap: "pretty",
-              }}
-            >
+            <h1 className="h1-hero">
               Where great careers start from scratch.
             </h1>
             <p
@@ -105,15 +89,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div
-            style={{
-              position: "relative",
-              height: 440,
-              minWidth: 0,
-              overflow: "hidden",
-              borderRadius: 16,
-            }}
-          >
+          <div className="media-lg">
             <ImageSlot
               id="home-hero"
               shape="rounded"
@@ -213,11 +189,11 @@ export default function HomePage() {
         style={{
           maxWidth: 1160,
           margin: "0 auto",
-          padding: "96px 24px",
           display: "flex",
           flexDirection: "column",
           gap: 48,
         }}
+        className="pad-section"
       >
         <div
           style={{
@@ -238,15 +214,7 @@ export default function HomePage() {
           >
             Why people stay
           </div>
-          <h2
-            style={{
-              margin: 0,
-              fontSize: 40,
-              fontWeight: 800,
-              letterSpacing: "-0.01em",
-              lineHeight: 1.1,
-            }}
-          >
+          <h2 className="h2-section">
             A place that&apos;s actually built for growing.
           </h2>
           <p
@@ -261,13 +229,7 @@ export default function HomePage() {
             the best leaders are the ones who&apos;ve done the work themselves.
           </p>
         </div>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3,1fr)",
-            gap: 20,
-          }}
-        >
+        <div className="grid-3">
           {[
             {
               title: "Promote from within",
@@ -327,25 +289,10 @@ export default function HomePage() {
         }}
       >
         <div
-          style={{
-            maxWidth: 1160,
-            margin: "0 auto",
-            padding: "96px 24px",
-            display: "grid",
-            gridTemplateColumns: "0.9fr 1.1fr",
-            gap: 56,
-            alignItems: "center",
-          }}
+          className="grid-split--rev pad-section"
+          style={{ maxWidth: 1160, margin: "0 auto" }}
         >
-          <div
-            style={{
-              position: "relative",
-              height: 380,
-              minWidth: 0,
-              overflow: "hidden",
-              borderRadius: 16,
-            }}
-          >
+          <div className="media-sm">
             <ImageSlot
               id="home-team"
               shape="rounded"
@@ -366,15 +313,7 @@ export default function HomePage() {
             >
               The work
             </div>
-            <h2
-              style={{
-                margin: 0,
-                fontSize: 40,
-                fontWeight: 800,
-                letterSpacing: "-0.01em",
-                lineHeight: 1.1,
-              }}
-            >
+            <h2 className="h2-section">
               Winning business, one conversation at a time.
             </h2>
             <p
@@ -421,10 +360,10 @@ export default function HomePage() {
       </div>
 
       <div
+        className="pad-section"
         style={{
           maxWidth: 1160,
           margin: "0 auto",
-          padding: "96px 24px",
           display: "flex",
           flexDirection: "column",
           gap: 48,
@@ -449,15 +388,7 @@ export default function HomePage() {
           >
             Your journey
           </div>
-          <h2
-            style={{
-              margin: 0,
-              fontSize: 40,
-              fontWeight: 800,
-              letterSpacing: "-0.01em",
-              lineHeight: 1.1,
-            }}
-          >
+          <h2 className="h2-section">
             From day one to running your own market.
           </h2>
           <p
@@ -472,13 +403,7 @@ export default function HomePage() {
             and most of it moves faster than you&apos;d think.
           </p>
         </div>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(4,1fr)",
-            gap: 20,
-          }}
-        >
+        <div className="grid-4">
           {[
             {
               n: "01",
@@ -545,10 +470,10 @@ export default function HomePage() {
         }}
       >
         <div
+          className="pad-section-sm"
           style={{
             maxWidth: 1160,
             margin: "0 auto",
-            padding: "88px 24px",
             display: "flex",
             flexDirection: "column",
             gap: 40,
@@ -573,24 +498,11 @@ export default function HomePage() {
             >
               Local office, national backbone
             </div>
-            <h2
-              style={{
-                margin: 0,
-                fontSize: 40,
-                fontWeight: 800,
-                letterSpacing: "-0.01em",
-              }}
-            >
+            <h2 className="h2-section">
               Built up since 1999.
             </h2>
           </div>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(4,1fr)",
-              gap: 20,
-            }}
-          >
+          <div className="grid-4">
             {[
               {
                 stat: "1999",
@@ -652,16 +564,8 @@ export default function HomePage() {
 
       <div style={{ background: "linear-gradient(135deg,#1740A0,#2760D8)" }}>
         <div
-          style={{
-            maxWidth: 1160,
-            margin: "0 auto",
-            padding: "80px 24px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            gap: 32,
-            flexWrap: "wrap",
-          }}
+          className="cta-row pad-cta"
+          style={{ maxWidth: 1160, margin: "0 auto" }}
         >
           <div
             style={{
@@ -672,13 +576,8 @@ export default function HomePage() {
             }}
           >
             <h2
-              style={{
-                margin: 0,
-                fontSize: 40,
-                fontWeight: 900,
-                letterSpacing: "-0.01em",
-                color: "#FFFFFF",
-              }}
+              className="h2-section"
+              style={{ fontWeight: 900, color: "#FFFFFF" }}
             >
               Your future team is waiting.
             </h2>
