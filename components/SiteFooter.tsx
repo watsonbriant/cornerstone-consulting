@@ -26,11 +26,11 @@ export function SiteFooter() {
               style={{
                 fontWeight: 600,
                 fontSize: 10,
-                letterSpacing: "0.44em",
+                letterSpacing: "0.08em",
                 color: "#7FA8F5",
               }}
             >
-              CONSULTING
+              REVENUE PARTNERS
             </span>
           </div>
           <p
@@ -149,7 +149,7 @@ export function SiteFooter() {
             color: "#8FA5C6",
           }}
         >
-          <span>© 2026 Cornerstone Consulting. All rights reserved.</span>
+          <span>© 2026 Cornerstone Revenue Partners. All rights reserved.</span>
           <span>Established 1999 · 75 offices nationwide</span>
         </div>
       </div>

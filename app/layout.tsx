@@ -9,7 +9,7 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
-  title: "Cornerstone Consulting — Tampa, FL",
+  title: "Cornerstone Revenue Partners — Tampa, FL",
   description:
     "A Tampa-based B2B client acquisition team. We build careers from the ground up and promote 100% from within.",
 };

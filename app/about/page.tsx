@@ -46,7 +46,7 @@ export default function AboutPage() {
               maxWidth: 680,
             }}
           >
-            Cornerstone Consulting is a Tampa-based B2B client acquisition team
+            Cornerstone Revenue Partners is a Tampa-based B2B client acquisition team
             — part of a national organization that grew from a single office in
             1999 to 75 across the country.
           </p>
@@ -114,7 +114,8 @@ export default function AboutPage() {
             id="about-meeting"
             shape="rounded"
             radius={16}
-            src="https://cpc-ms.netlify.app/assets/photos/about-meeting.png"
+            src="/IMG_1785.jpeg"
+            alt="Team collaborating around the conference table"
             placeholder="Team meeting photo"
           />
         </div>
@@ -234,7 +235,8 @@ export default function AboutPage() {
               id="about-training"
               shape="rounded"
               radius={16}
-              src="https://cpc-ms.netlify.app/assets/photos/coaching.png"
+              src="/IMG_1818.jpeg"
+              alt="One-on-one coaching with a team member"
               placeholder="Hands-on training photo"
             />
           </div>

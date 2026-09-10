@@ -500,7 +500,8 @@ export default function CareersPage() {
               id="careers-culture"
               shape="rounded"
               radius={16}
-              src="https://cpc-ms.netlify.app/assets/photos/culture-conversation.png"
+              src="/IMG_0439.jpeg"
+              alt="Team members reviewing work together on a tablet"
               placeholder="Team culture photo"
             />
           </div>

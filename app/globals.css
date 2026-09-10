@@ -94,6 +94,79 @@ button {
   outline: none;
 }
 
+.file-drop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 112px;
+  padding: 20px;
+  border: 1.5px dashed rgba(39, 96, 216, 0.35);
+  border-radius: 12px;
+  background: #f8fafe;
+  cursor: pointer;
+  text-align: center;
+}
+
+.file-drop:hover,
+.file-drop:focus-within {
+  border-color: #2760d8;
+  background: #eef4fd;
+}
+
+.file-drop input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.file-drop__title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1740a0;
+}
+
+.file-drop__hint {
+  font-size: 13px;
+  color: #7288ab;
+}
+
+.field-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #3a5075;
+}
+
+.field-check input {
+  margin-top: 3px;
+  accent-color: #2760d8;
+  flex-shrink: 0;
+}
+
+.form-status {
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.form-status--error {
+  background: #fdecec;
+  color: #9b1c1c;
+  border: 1px solid rgba(155, 28, 28, 0.16);
+}
+
 .nav-link {
   color: #3a5075;
 }

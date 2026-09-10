@@ -37,11 +37,11 @@ export function SiteHeader({ active }: { active: SitePage }) {
             style={{
               fontWeight: 600,
               fontSize: 10,
-              letterSpacing: "0.44em",
+              letterSpacing: "0.08em",
               color: "#2760D8",
             }}
           >
-            CONSULTING
+            REVENUE PARTNERS
           </span>
         </Link>
 

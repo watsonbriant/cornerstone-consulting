@@ -1,3 +1,4 @@
+import { ContactForm } from "@/components/ContactForm";
 import { ImageSlot } from "@/components/ImageSlot";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -59,93 +60,7 @@ export default function ContactPage() {
           padding: "24px 24px 96px",
         }}
       >
-        <form
-          style={{
-            background: "#FFFFFF",
-            border: "1px solid rgba(39,96,216,0.15)",
-            borderRadius: 16,
-            padding: 36,
-            display: "flex",
-            flexDirection: "column",
-            gap: 20,
-            boxShadow: "0 2px 12px rgba(23,64,160,0.06)",
-          }}
-        >
-          <div className="grid-2">
-            <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-              <label
-                style={{ fontSize: 14, fontWeight: 700, color: "#1740A0" }}
-              >
-                First name
-              </label>
-              <input type="text" name="firstName" className="field-input" />
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-              <label
-                style={{ fontSize: 14, fontWeight: 700, color: "#1740A0" }}
-              >
-                Last name
-              </label>
-              <input type="text" name="lastName" className="field-input" />
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-              <label
-                style={{ fontSize: 14, fontWeight: 700, color: "#1740A0" }}
-              >
-                Email
-              </label>
-              <input type="email" name="email" className="field-input" />
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-              <label
-                style={{ fontSize: 14, fontWeight: 700, color: "#1740A0" }}
-              >
-                Phone
-              </label>
-              <input type="tel" name="phone" className="field-input" />
-            </div>
-          </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-            <label style={{ fontSize: 14, fontWeight: 700, color: "#1740A0" }}>
-              I&apos;m interested in
-            </label>
-            <select name="interest" className="field-input">
-              <option>Entry-level / B2B sales</option>
-              <option>Management track</option>
-              <option>Internship</option>
-              <option>Just learning more</option>
-            </select>
-          </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-            <label style={{ fontSize: 14, fontWeight: 700, color: "#1740A0" }}>
-              Why are you interested? (optional)
-            </label>
-            <textarea
-              name="message"
-              rows={4}
-              className="field-input"
-              style={{ resize: "vertical" }}
-            />
-          </div>
-          <button
-            type="submit"
-            className="btn-primary"
-            style={{
-              border: "none",
-              borderRadius: 8,
-              padding: "16px 24px",
-              fontSize: 16,
-              fontWeight: 800,
-              cursor: "pointer",
-            }}
-          >
-            Submit application →
-          </button>
-          <div style={{ fontSize: 13, color: "#7288AB", lineHeight: 1.5 }}>
-            By submitting you agree to be contacted about career opportunities
-            at Cornerstone Consulting.
-          </div>
-        </form>
+        <ContactForm />
 
         <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
           <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
@@ -246,7 +161,7 @@ export default function ContactPage() {
             <div
               style={{
                 position: "relative",
-                height: 180,
+                height: 260,
                 marginTop: 6,
                 borderRadius: 12,
                 overflow: "hidden",
@@ -256,6 +171,8 @@ export default function ContactPage() {
                 id="contact-map"
                 shape="rounded"
                 radius={12}
+                src="/IMG_0468.jpeg"
+                alt="Team gathered in the Tampa office"
                 placeholder="Map / office photo"
               />
             </div>

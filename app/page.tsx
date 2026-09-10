@@ -94,7 +94,8 @@ export default function HomePage() {
               id="home-hero"
               shape="rounded"
               radius={16}
-              src="https://cpc-ms.netlify.app/assets/photos/hero-presentation.png"
+              src="/IMG_1515.jpeg"
+              alt="Team meeting in the Tampa conference room"
               placeholder="Team presentation photo"
             />
           </div>
@@ -297,7 +298,8 @@ export default function HomePage() {
               id="home-team"
               shape="rounded"
               radius={16}
-              src="https://cpc-ms.netlify.app/assets/photos/team-lounge.png"
+              src="/IMG_1831.jpeg"
+              alt="Team huddle reviewing a plan together"
               placeholder="Team lounge photo"
             />
           </div>
@@ -556,7 +558,7 @@ export default function HomePage() {
               “Work hard. Have fun. Get things done.”
             </div>
             <div style={{ fontSize: 15, color: "#3A5075" }}>
-              — The culture at Cornerstone Consulting
+              — The culture at Cornerstone Revenue Partners
             </div>
           </div>
         </div>
